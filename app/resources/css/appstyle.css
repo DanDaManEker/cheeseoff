@@ -1,0 +1,50 @@
+.logo {
+    text-align: center;
+    margin:5px 0 5px 0;
+}
+body {
+    background-image: url("../images/background.png");
+}
+
+.social-media-connect{
+    text-align: center;
+}
+.submit-btn{
+    text-align: center;
+}
+button.btn.btn-danger.danger-btn {
+    height: 41px;
+    width: 175px;
+    border:1px solid dimgrey;
+}
+.container-fluid.container-padding {
+    width:490px;
+}
+*{
+    font-family: 'Candal', sans-serif;
+    font-size: 12px;
+}
+#whos-game{
+    text-align: center;
+    color: #f7f7f7;
+    -webkit-text-stroke: 1px black;
+}
+h1{
+    font-size: 5em;
+}
+input[type="checkbox"] {
+    height: 41px;
+    width: 200px;
+}
+.male-icon{
+    background:url(../images/mars.png) left top;
+    width:57px;
+    height:60px;
+    display: block;
+}
+.female-icon{
+    background:url(../images/venus.png) left top;
+    width:42px;
+    height:60px;
+    display: block;
+}
