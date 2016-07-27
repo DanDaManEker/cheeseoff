@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Off Game Screen</title>
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../../libs/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../app/resources/css/appstyle.css">
+    <script src="../../../libs/jquery/jquery-2.2.4.js"></script>
+    <script src="../../../libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <script src="../../resources/script/app.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="logo col-sm-12">
+        <a href="/" title="Return to the homepage" class="logo">
+            <img src="../../resources/images/logo.png" alt="CheeseOff logo"/>
+        </a>
+    </div>
+
+    <div class="col-sm-10 col-sm-offset-1">
+        <!--need to add a Json file that will pull the name of whoever is playing first here-->
+        <p id="whos-game">Player 1: Jon Doe</p>
+    </div>
+</header>
+
+<div class="col-sm-12 now-playing">
+    <form id="cheeseoff-players">
+        <div class="youtube-search">
+            <span class="col-sm-4 image">
+            </span>
+            <div class="col-sm-8 youtube-search-area">
+                <form action=”http://www.youtube.com/results” method=”get”>
+                    <input class="col-sm-6" name=”search_query” type=”text” maxlength=”128″ />
+                    <input class="col-sm-6" type=submit value=Cheesy-Search>
+                </form>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="ytplayer" class="col-sm-12 col-sm-offset-1"></div>
+
+<!--explain the   <div class="container-fluid container-padding">-->
+        <div class="col-sm-12">
+            <p class="next-up">Next Up</p>
+        </div>
+        <div class="col-sm-12">
+            <p class="player-name">Jane Doe</p>
+        </div>
+
+<div class="stars col-sm-12 star-system">
+    <form action="">
+        <input class="star star-5" id="star-5" type="radio" name="star"/>
+        <label class="star star-5" for="star-5"></label>
+        <input class="star star-4" id="star-4" type="radio" name="star"/>
+        <label class="star star-4" for="star-4"></label>
+        <input class="star star-3" id="star-3" type="radio" name="star"/>
+        <label class="star star-3" for="star-3"></label>
+        <input class="star star-2" id="star-2" type="radio" name="star"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-1" id="star-1" type="radio" name="star"/>
+        <label class="star star-1" for="star-1"></label>
+    </form>
+</div>
+<!--all stars need ID to be individually checked, IZACK HELP i need to find a smarter way to do this-->
+<div class="col-sm-12">
+    <p class="next-up">Player 3</p>
+</div>
+<div class="col-sm-12">
+    <p class="player-name">Gomez Adams</p>
+</div>
+
+<div class="stars col-sm-12 star-system">
+    <form action="">
+        <input class="star star-5" type="radio" name="star"/>
+        <label class="star star-5" for="star-5"></label>
+        <input class="star star-4" type="radio" name="star"/>
+        <label class="star star-4" for="star-4"></label>
+        <input class="star star-3" type="radio" name="star"/>
+        <label class="star star-3" for="star-3"></label>
+        <input class="star star-2" type="radio" name="star"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-1" type="radio" name="star"/>
+        <label class="star star-1" for="star-1"></label>
+    </form>
+</div>
+
+<div class="col-sm-12">
+    <p class="next-up">Player 4</p>
+</div>
+<div class="col-sm-12">
+    <p class="player-name">The Dude</p>
+</div>
+
+<div class="stars col-sm-12 star-system">
+    <form action="">
+        <input class="star star-5" type="radio" name="star"/>
+        <label class="star star-5" for="star-5"></label>
+        <input class="star star-4" type="radio" name="star"/>
+        <label class="star star-4" for="star-4"></label>
+        <input class="star star-3" type="radio" name="star"/>
+        <label class="star star-3" for="star-3"></label>
+        <input class="star star-2" type="radio" name="star"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-1" type="radio" name="star"/>
+        <label class="star star-1" for="star-1"></label>
+    </form>
+</div>
+
+<div class="col-sm-12">
+    <p class="next-up">Player 5</p>
+</div>
+<div class="col-sm-12">
+    <p class="player-name">Molly Ringwald</p>
+</div>
+
+<div class="stars col-sm-12 star-system">
+    <form action="">
+        <input class="star star-5"  type="radio" name="star"/>
+        <label class="star star-5" for="star-5"></label>
+        <input class="star star-4"  type="radio" name="star"/>
+        <label class="star star-4" for="star-4"></label>
+        <input class="star star-3"  type="radio" name="star"/>
+        <label class="star star-3" for="star-3"></label>
+        <input class="star star-2"  type="radio" name="star"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-1"  type="radio" name="star"/>
+        <label class="star star-1" for="star-1"></label>
+    </form>
+</div>
+
+</body>
+</html>
