@@ -1,8 +1,12 @@
 *{
     font-family: 'Candal', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     -webkit-text-stroke: 1px black;
+}
+.form-control {
+    color: #ffffff;
+    -webkit-text-stroke: 0px black;
 }
 
 .logo {
@@ -34,6 +38,10 @@ button.btn.btn-danger.danger-btn {
     -webkit-text-stroke: 1px black;
     font-size: 4.5em;
     margin-bottom: 10px;
+    background: -moz-linear-gradient(left,  rgba(212,81,219,0.16) 0%, rgba(212,81,219,0.21) 2%, rgba(242,4,206,0.79) 24%, rgba(243,4,212,1) 32%, rgba(247,2,231,0.82) 56%, rgba(234,31,227,0.7) 72%, rgba(212,81,219,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(212,81,219,0.16) 0%,rgba(212,81,219,0.21) 2%,rgba(242,4,206,0.79) 24%,rgba(243,4,212,1) 32%,rgba(247,2,231,0.82) 56%,rgba(234,31,227,0.7) 72%,rgba(212,81,219,0) 100%);
+    background: linear-gradient(to right,  rgba(212,81,219,0.16) 0%,rgba(212,81,219,0.21) 2%,rgba(242,4,206,0.79) 24%,rgba(243,4,212,1) 32%,rgba(247,2,231,0.82) 56%,rgba(234,31,227,0.7) 72%,rgba(212,81,219,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29d451db', endColorstr='#00d451db',GradientType=1 );
 }
 .youtube-search-area{
     margin-top: 20px;
@@ -43,10 +51,41 @@ button.btn.btn-danger.danger-btn {
     text-align: center;
 }
 
-input[type="checkbox"] {
-    height: 30px;
+.hunk-player{
+    background: -moz-linear-gradient(left,  rgba(91,177,247,0.34) 0%, rgba(79,147,248,1) 5%, rgba(21,5,252,0.82) 29%, rgba(78,144,248,0.7) 46%, rgba(91,177,247,0.58) 50%, rgba(91,177,247,0) 70%);
+    background: -webkit-linear-gradient(left,  rgba(91,177,247,0.34) 0%,rgba(79,147,248,1) 5%,rgba(21,5,252,0.82) 29%,rgba(78,144,248,0.7) 46%,rgba(91,177,247,0.58) 50%,rgba(91,177,247,0) 70%);
+    background: linear-gradient(to right,  rgba(91,177,247,0.34) 0%,rgba(79,147,248,1) 5%,rgba(21,5,252,0.82) 29%,rgba(78,144,248,0.7) 46%,rgba(91,177,247,0.58) 50%,rgba(91,177,247,0) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575bb1f7', endColorstr='#005bb1f7',GradientType=1 );
+}
+.babe-player{
+    background: -moz-linear-gradient(left,  rgba(212,81,219,0.34) 0%, rgba(217,68,217,1) 5%, rgba(242,4,206,0.82) 30%, rgba(246,2,226,0.7) 46%, rgba(247,2,231,0.58) 50%, rgba(233,34,226,0) 70%, rgba(212,81,219,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(212,81,219,0.34) 0%,rgba(217,68,217,1) 5%,rgba(242,4,206,0.82) 30%,rgba(246,2,226,0.7) 46%,rgba(247,2,231,0.58) 50%,rgba(233,34,226,0) 70%,rgba(212,81,219,0) 100%);
+    background: linear-gradient(to right,  rgba(212,81,219,0.34) 0%,rgba(217,68,217,1) 5%,rgba(242,4,206,0.82) 30%,rgba(246,2,226,0.7) 46%,rgba(247,2,231,0.58) 50%,rgba(233,34,226,0) 70%,rgba(212,81,219,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57d451db', endColorstr='#00d451db',GradientType=1 );
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox] + label
+{
+    background: url("../images/insertcoin02.png");
+    height: 63px;
     width: 50px;
-    float: right;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input[type=checkbox]:checked + label
+{
+    background: url("../images/insertcoin01.png");
+    height: 63px;
+    width: 50px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+.image-checkbox{
+    margin-left: 133px;
 }
 .female{
     background-color: #fb0b7a;
@@ -63,6 +102,10 @@ input[type="checkbox"] {
 .next-up{
     font-size: 3.5em;
     margin-bottom: 0;
+    background: -moz-linear-gradient(left,  rgba(248,181,0,0) 0%, rgba(248,181,0,0.73) 7%, rgba(248,181,0,0.89) 30%, rgba(252,205,77,0.9) 32%, rgba(252,205,77,1) 46%, rgba(252,205,77,0) 62%);
+    background: -webkit-linear-gradient(left,  rgba(248,181,0,0) 0%,rgba(248,181,0,0.73) 7%,rgba(248,181,0,0.89) 30%,rgba(252,205,77,0.9) 32%,rgba(252,205,77,1) 46%,rgba(252,205,77,0) 62%);
+    background: linear-gradient(to right,  rgba(248,181,0,0) 0%,rgba(248,181,0,0.73) 7%,rgba(248,181,0,0.89) 30%,rgba(252,205,77,0.9) 32%,rgba(252,205,77,1) 46%,rgba(252,205,77,0) 62%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8b500', endColorstr='#00fccd4d',GradientType=1 );
 }
 
 .player-name{
