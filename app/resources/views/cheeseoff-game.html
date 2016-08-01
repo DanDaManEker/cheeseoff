@@ -22,24 +22,17 @@
 
     <div class="col-sm-10 col-sm-offset-1">
         <!--need to add a Json file that will pull the name of whoever is playing first here-->
-        <p id="whos-game">Player 1: Jon Doe</p>
+        <p id="whos-game">Player 1: Count Drunkula</p>
     </div>
 </header>
 
 <div class="col-sm-12 now-playing">
-    <form id="cheeseoff-players">
-        <div class="youtube-search">
-            <span class="col-sm-4 image">
-            </span>
-            <div class="col-sm-8 youtube-search-area">
-                <form action=”http://www.youtube.com/results” method=”get”>
-                    <input class="col-sm-6" name=”search_query” type=”text” maxlength=”128″ />
-                    <input class="col-sm-6" type=submit value=Cheesy-Search>
-                </form>
-            </div>
-        </div>
+    <form action="http://www.youtube.com/results" id="cheeseoff-players" method="get">
+        <input name="search_query" type="text" maxlength="128" />
+        <input type="submit" value="Search" />
     </form>
 </div>
+
 
 <div id="ytplayer" class="col-sm-12 col-sm-offset-1"></div>
 
@@ -48,7 +41,7 @@
             <p class="next-up">Next Up</p>
         </div>
         <div class="col-sm-12">
-            <p class="player-name">Jane Doe</p>
+            <p class="player-name">Chris Odum</p>
         </div>
 
 <div class="stars col-sm-12 star-system">

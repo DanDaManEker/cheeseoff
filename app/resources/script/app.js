@@ -14,4 +14,16 @@ function onYouTubePlayerAPIReady() {
         videoId: 'PGNiXGX2nLU'
     });
 }
+function searchByKeyword() {
+    var request = gapi.client.youtube.search.list({
+        q: 'dogs',
+        part: 'snippet'
+    });
 
+    request.execute(function(results) {
+        for(var i in results.items) {
+            var item = results.items[i];
+            console.log('[%s] Title: %s', item.id.videoId,item.snippet.title);
+        }
+    });
+}
